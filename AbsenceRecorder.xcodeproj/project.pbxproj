@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B658B19F279F4401000E2C7B /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C37A6279F2689001C8CA8 /* Division.swift */; };
+		B658B1A0279F4402000E2C7B /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C37A6279F2689001C8CA8 /* Division.swift */; };
+		B658B1A1279F4407000E2C7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C377A279F2464001C8CA8 /* ContentView.swift */; };
 		B67C3779279F2464001C8CA8 /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C3778279F2464001C8CA8 /* AbsenceRecorderApp.swift */; };
 		B67C377B279F2464001C8CA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C377A279F2464001C8CA8 /* ContentView.swift */; };
 		B67C377D279F2465001C8CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67C377C279F2465001C8CA8 /* Assets.xcassets */; };
@@ -290,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B658B19F279F4401000E2C7B /* Division.swift in Sources */,
 				B67C378A279F2466001C8CA8 /* AbsenceRecorderTests.swift in Sources */,
+				B658B1A1279F4407000E2C7B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +305,7 @@
 			files = (
 				B67C3796279F2466001C8CA8 /* AbsenceRecorderUITestsLaunchTests.swift in Sources */,
 				B67C3794279F2466001C8CA8 /* AbsenceRecorderUITests.swift in Sources */,
+				B658B1A0279F4402000E2C7B /* Division.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
