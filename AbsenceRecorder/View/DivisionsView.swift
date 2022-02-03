@@ -7,25 +7,28 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var divisions: [Division]
+struct DivisionsView: View {
+    @EnvironmentObject var state: StateController
     @State private var currentDate: Date = Date()
     
     var body: some View {
-        NavigationView{
-            List(divisions, id: \.self.code) { division in
-                DivisionItem(division: division)
+        NavigationView {
+            List(state.divisions, id: \.self.code) { division in
+                NavigationLink(destination: AbsenceView(division: division)) {
+                    DivisionItem(division: division)
+                    }
+                
             }
             .navigationTitle(currentDate.getShortDate())
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: { currentDate = currentDate.previousDay()}) {
-                        Rectangle()
+                        Image(systemName: "arrow.backward")
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { currentDate = currentDate.nextDay()}) {
-                        Rectangle()
+                        Image(systemName: "arrow.forward")
                     }
                 }
             }
@@ -37,7 +40,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(divisions: Division.examples)
+        DivisionsView()
+            .environmentObject(StateController())
     }
 }
 
