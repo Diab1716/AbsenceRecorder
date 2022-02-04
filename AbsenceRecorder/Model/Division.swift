@@ -10,6 +10,7 @@ import Foundation
 class Division: Identifiable{
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code: String){
         self.code = code
